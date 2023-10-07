@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- https://www.figma.com/file/0D3MEo4CcjR2M5ESN9BAER/My-Book-Shelf-(Community)?node-id=10%3A128&mode=dev -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My Book Shelf</title>
+  </head>
+
+  <body>
+    <div class="welcome">
+      <img src="./images/Logo 1.png" alt="" />
+    </div>
+
+    <div class="pages hide">
+      <div class="login page hide">
+        <img src="./images/Logo 1.png" alt="" />
+        <h4>Welcome Back !</h4>
+        <p>Sign in to continue to yourDigital Library</p>
+
+        <b>Email</b>
+        <input type="email" placeholder="user@gmail.com" id="logEmail" /><br />
+
+        <b>Password</b>
+        <input type="password" placeholder="*******" id="logPassword" />
+
+        <div class="check_forget">
+          <input type="checkbox" />
+          <p class="p">Remember me</p>
+          <p class="line">Forgot password?</p>
+        </div>
+
+        <button class="btn" id="loginBtn">Login</button>
+
+        <div class="login_bottom">
+          <p>New User? <span id="regLink">Register Here</span></p>
+          <p>Use as Guest</p>
+        </div>
+      </div>
+
+      <div class="register page hide">
+        <img src="./images/Logo 1.png" alt="" />
+        <h4>Registration</h4>
+        <p>For Both Staff & Students</p>
+
+        <b>Reg No.</b>
+        <input type="text" id="regNumber" /><br />
+
+        <b>College Email ID</b>
+        <input type="email" id="regEmail" /><br />
+
+        <b>Password</b>
+        <input type="password" id="regPassword" /><br />
+
+        <b>Confirm Password</b>
+        <input type="password" id="regConfirm" /><br />
+
+        <button class="btn" id="regBtn">Register</button>
+
+        <div class="login_bottom">
+          <p>Already a User? <span class="line">Login now</span></p>
+          <p>Use as Guest</p>
+        </div>
+      </div>
+
+      <div class="otp page hide">
+        <img src="./images/Logo 1.png" alt="" />
+        <h4>Verification</h4>
+        <p>Check your E-mail for OTP</p>
+
+        <b>Enter your OTP Here</b>
+        <div class="inputs">
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div>
+
+        <button class="btn" id="verifyBtn">Verify</button>
+
+        <div class="login_bottom">
+          <p>Not yet received? <span class="line">Resend</span></p>
+          <p id="otpBackBtn">Back</p>
+        </div>
+      </div>
+
+      <div class="verifed page hide">
+        <img src="./images/Logo 1.png" alt="" />
+        <h4>Verification</h4>
+        <p>Thank you</p>
+
+        <b>You are Verified</b>
+
+        <img id="vektor" src="./images/Vector.png" alt="" />
+
+        <button class="btn" id="verifedBtn">Login</button>
+      </div>
+    </div>
+
+    <main class="hide">
+      <div class="home hide">
+        <div class="left_side">
+          <img src="./images/Logo 1.png" alt="" />
+          <ul class="main_menu">
+            <li>
+              <img src="./svg/home.svg" alt="" />
+              <a>Home</a>
+            </li>
+
+            <li>
+              <img src="./svg/Search.svg" alt="" />
+              <a>Search</a>
+            </li>
+
+            <li>
+              <img src="./svg/Bookshelf.svg" alt="" />
+              <a>My Shelf</a>
+            </li>
+
+            <li>
+              <img src="./svg/Give Gift.svg" alt="" />
+              <a>Contribute</a>
+            </li>
+          </ul>
+          <ul class="left_bottom">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="lds-ring hide">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="right_side hide" id="righHomeSide">
+          <nav>
+            <div class="allSearch">
+              <select>
+                <option>All</option>
+                <option>Title</option>
+                <option>Autor</option>
+                <option>Text</option>
+                <option>Subjects</option>
+              </select>
+              <input type="text" placeholder="Search" />
+              <img class="srch" src="./svg/Search red.svg" alt="" />
+              <img class="scr" src="./svg/barcode scanner.svg" alt="" />
+            </div>
+            <div class="lang">
+              <img src="./svg/Translate.svg" alt="" />
+              <select>
+                <option>Lang</option>
+                <option>ENG</option>
+                <option>UZB</option>
+                <option>RUS</option>
+              </select>
+            </div>
+            <div class="timeAndDay"></div>
+            <div class="profile">
+              <img src="./svg/profil.svg" alt="" />
+              <select>
+                <option>Kenson</option>
+                <option>Profile</option>
+                <option>Favourite</option>
+                <option>Payments</option>
+                <option>Logout</option>
+              </select>
+            </div>
+          </nav>
+
+          <div class="box">
+            <header>
+              <div class="quote">
+                <h2>Today's Quote</h2>
+                <p>
+                  “There is more treasure in books than in all the pirate’s loot
+                  on Treasure Island.”
+                </p>
+                <b>-Walt Disney</b>
+                <div class="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="newBooks">
+                <div class="p_rotate">
+                  <p>New Arrivals</p>
+                </div>
+                <div class="books" id="books"></div>
+              </div>
+            </header>
+            <h2>Good Morning</h2>
+            <aside>
+              <div class="book_rows">
+                <h3>Recommended for You</h3>
+                <p>Show All</p>
+              </div>
+              <div class="books" id="recommend"></div>
+
+              <div class="book_rows">
+                <h3>Recent Readings</h3>
+                <p>Show All</p>
+              </div>
+              <div class="books" id="recentBooks"></div>
+            </aside>
+          </div>
+
+          <section class="searchComponent">
+            <div class="profile kind">
+              <select class="searchMenu hide">
+                <option>Browser</option>
+                <option>Engineering</option>
+                <option>Medical</option>
+                <option>Arts & Science</option>
+                <option>Architecture</option>
+                <option>Law</option>
+              </select>
+            </div>
+            <div class="searchBooks"></div>
+          </section>
+
+          <section class="myShelf">
+            <h2 class="title">Your <span>Shelf</span></h2>
+            <div class="links">
+              <a href="#">All links</a>
+              <a href="#">Favourite</a>
+              <a href="#">Borrowed Books</a>
+              <a href="#">E-Books</a>
+              <a href="#">Audio Books</a>
+              <a href="#">Articles & Journals</a>
+            </div>
+            <div class="cards"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
